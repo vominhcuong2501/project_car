@@ -1,0 +1,22 @@
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  border-radius: 6px !important;
+  width: 208px;
+  height: 52px;
+  background-color: #0F5EDD !important;
+}
+
+aside {
+  max-width: 240px !important;
+  min-width: 240px !important;
+  width: 240px !important;
+  flex: 0 0 240px !important;
+  background-color:  #323435 !important;
+}
+.ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub {
+  background-color:  #323435 !important;
+
+}
+.ant-layout-sider-children {
+  width: 240px !important;
+}
+

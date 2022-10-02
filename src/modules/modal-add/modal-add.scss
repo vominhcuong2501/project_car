@@ -1,0 +1,63 @@
+.row {
+  .form-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #232323;
+    margin-bottom: 10px;
+    line-height: 24px;
+    padding: 12px 0;
+    box-shadow: inset 0px -1px 0px #f1f1f1;
+  }
+  .form-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px dashed #e3e3e3;
+    position: relative;
+    p {
+      font-size: 25px;
+      color: #232323;
+    }
+    span {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 20px;
+      color: #8c8c8c;
+    }
+    .image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      position: absolute;
+      top: -80px;
+      left: -90px;
+    }
+  }
+  .ant-form-item-label > label {
+    color: #8c8c8c;
+    font-size: 14px !important;
+    line-height: 22px !important;
+    font-weight: 400 !important;
+  }
+  .custom-select {
+    border: none;
+    border-radius: 48px;
+    background-color: #cef7e2;
+    padding: 5px 12px;
+  }
+}
+
+.ant-modal-footer {
+  display: none !important;
+}
+.ant-select-selector {
+    background-color: #CEF7E2 !important;
+    border: none !important;
+    border-radius: 20px !important;
+    width: 131px !important;
+    height: 34px !important;
+}
+.ant-select-arrow {
+    position: absolute !important;
+    left: 100px !important;
+}
