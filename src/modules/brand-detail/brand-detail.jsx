@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { Form, Input, Select, Button } from "antd";
+import { Form, Input, Select, Button, Image } from "antd";
 import "./brand-detail.scss";
 import { useNavigate, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -11,6 +11,17 @@ export default function BrandDetail() {
   const [form] = Form.useForm();
   const { brandSelected } = useSelector((state) => state.carReducer);
   const param = useParams();
+  const [image, setImage] = useState();
+  const [file, setFile] = useState();
+  const handleChangeImage = (event) => {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = (e) => {
+      setImage(e.target.result);
+      setFile(file);
+    };
+  };
   useEffect(() => {
     if (brandSelected) {
       form.setFieldsValue({
@@ -50,7 +61,17 @@ export default function BrandDetail() {
                 <div className="overlay d-flex flex-column justify-content-center">
                   <p>CHANGE</p>
                   <p>LOGO</p>
+                  <Form.Item
+                  validateTrigger={["onChange"]}
+                  rules={[
+                    { required: true, message: "Hình ảnh không được bỏ trống" },
+                  ]}
+                >
+                  <Input type="file" onChange={handleChangeImage} />
+                </Form.Item>
                 </div>
+                
+                <Image src={image} className="image" />
               </div>
             </div>
             <div className="col-12">
@@ -75,7 +96,7 @@ export default function BrandDetail() {
             </div>
             <div className="col-12">
               <Form.Item label="Brand Description" name="desc">
-                <TextArea placeholder="Input content" allowClear rows={3} />
+                <TextArea placeholder="Input content" allowClear rows={2} />
               </Form.Item>
             </div>
             <div className="col-12">

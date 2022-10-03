@@ -20,3 +20,14 @@ aside {
   width: 240px !important;
 }
 
+// Reponsive
+@media (max-width: 575.98px) {
+  .web {
+    display: none !important;
+  }
+  .mobile {
+    display: block !important;
+  }
+
+}
+

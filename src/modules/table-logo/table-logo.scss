@@ -1,6 +1,9 @@
 main {
   height: 40px;
   margin: 0 !important;
+  .web {
+    background-color: #ffffff !important;
+  }
   .carList {
     color: #2f465f !important;
     font-size: 24px;
@@ -41,13 +44,16 @@ main {
     color: white;
     border-radius: 4px;
   }
+  .moblie {
+    display: none !important;
+  }
 }
 .table {
   margin: 23px 0 0 24px;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
-  color: #8C8C8C !important;
+  color: #8c8c8c !important;
   .logo-item {
     height: 124px;
     width: 1078px;
@@ -88,20 +94,91 @@ main {
       }
     }
     .status {
-        span {
-            font-size: 16xp;
-            font-weight: 500;
-        }
-        i{
-            margin-right: 8px;
-        }
+      span {
+        font-size: 16xp;
+        font-weight: 500;
+      }
+      i {
+        margin-right: 8px;
+      }
     }
     .btn-view {
-        border: 1px solid #B4B4B4;
-        border-radius: 4px;
-        margin-left: 30px;
-        padding: 0;
-        height: 40px;
+      border: 1px solid #b4b4b4;
+      border-radius: 4px;
+      margin-left: 30px;
+      padding: 0;
+      height: 40px;
     }
+  }
+}
+
+.mobile {
+  display: none;
+  .navbar-mobile {
+    margin: 12px 16px 0 16px;
+    padding: 18px 3px 19px 5px;
+    color: #232323;
+    .fa-chevron-left {
+      width: 11px !important;
+      height: 18px !important;
+    }
+    img {
+      margin-left: 20px;
+      margin-bottom: 5px;
+    }
+    .fa-plus {
+      font-size: 20px;
+    }
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    margin: 12px 16px 0 16px;
+  }
+  .search {
+    margin: 12px 16px 0 16px;
+    .input-search {
+      padding: 10px 17px;
+      background-color: #f1f1f1 !important;
+      border-radius: 5px !important;
+      height: 40px !important;
+    }
+    input.ant-input {
+      background-color: #f1f1f1 !important;
+      color: #8c8c8c !important;
+    }
+  }
+  .logo-item {
+    padding: 16px;
+    height: 70px;
+    border: 1px solid #f5f5f5;
+    .name-logo {
+      padding: 0 16px !important;
+      a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #232323;
+      }
+      p {
+        margin: 0;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #8c8c8c;
+      }
+    }
+  }
+}
+
+// Reponsive
+@media (max-width: 575.98px) {
+  .web {
+    display: none !important;
+  }
+  .mobile {
+    display: block !important;
   }
 }
