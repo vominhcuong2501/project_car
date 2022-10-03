@@ -2,7 +2,7 @@ body {
   overflow-x: hidden;
   font-family: "Poppins" !important;
   font-style: normal !important;
-  background-color: #323435 !important;
+  /* background-color: #323435 !important; */
 }
 
 .ant-layout .site-layout {

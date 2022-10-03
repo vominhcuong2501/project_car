@@ -2,7 +2,7 @@ import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 import { Layout, Menu } from "antd";
 import React, { useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
-import HeaderAdmin from "../components/header/header";
+import HeaderAdmin from "../../components/header-admin/header";
 import "./admin.scss";
 const { Header, Sider, Content } = Layout;
 
@@ -31,7 +31,7 @@ export default function Admin() {
           >
             <NavLink to="/admin">
               <img
-                src={require("../Assets/images/logo/UCARS Logo.png")}
+                src={require("../../Assets/images/logo/UCARS Logo.png")}
                 alt="UCARS Logo.png"
                 width={100}
                 height={30}
@@ -82,7 +82,7 @@ export default function Admin() {
             className="site-layout-background"
             style={{
               padding: 0,
-              backgroundColor: "#f0f2f5",
+              backgroundColor: "#F0F2F5",
             }}
           >
             <HeaderAdmin />

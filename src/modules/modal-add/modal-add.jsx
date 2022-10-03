@@ -77,7 +77,7 @@ export default function ModalAdd() {
               <Button
                 className="mt-4 mr-2"
                 style={{
-                  backgroundColor: "white",
+                  backgroundColor: "#FFFFFF",
                   border: "1px solid #B4B4B4",
                   padding: "9px 16px",
                   width: "83px",

@@ -1,0 +1,76 @@
+.car-list {
+  margin-top: 159px;
+  padding: 0 76px;
+  .card-item {
+    height: 361px;
+    margin-bottom: 24px;
+    padding: 0 20px;
+    .card-img-top {
+      height: 187px;
+      border-radius: 5px;
+    }
+    .card-body {
+      border: 1px solid #E3E3E3;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      .card-title {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+      .card-text {
+        margin-bottom: 8px;
+        .from {
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 400;
+          color: #232323;
+          margin-right: 5px;
+        }
+        .price {
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 600;
+          color: #0F5EDD;
+          margin-right: 12px;
+        }
+        .mo {
+          font-size: 12px;
+          line-height: 22px;
+          font-weight: 400;
+          color: #0F5EDD;
+          background-color: #96bfff;
+        }
+      }
+      .var {
+        font-size: 12px;
+        line-height: 22px;
+        font-weight: 400;
+        color: #5F5F5F;
+        margin-bottom: 16px;
+      }
+      .type {
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+        color: #232323;
+        margin-left: 8px;
+      }
+    }
+  }
+  .btn-view {
+    height: 40px;
+    color: #EE1B24;
+    margin-bottom: 80px;
+    button {
+      border: 1px solid #EE1B24;
+      border-radius: 5px;
+      padding: 8px 16px;
+      color: #EE1B24;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+    }
+  }
+}
