@@ -66,7 +66,7 @@ const price = (
     items={[
       {
         label: (
-          <div style={{ padding: "10px 12px", width: "400px" }}>
+          <div style={{ padding: "10px 12px", width: "300px" }}>
             <h4
               style={{
                 fontSize: "16px",
@@ -172,7 +172,7 @@ const type = (
     items={[
       {
         label: (
-          <div style={{ padding: "10px 12px", width: "473px", height: "370px" }}>
+          <div style={{ padding: "10px 12px", width: "420px", height: "370px" }}>
             <h4
               style={{
                 fontSize: "16px",
@@ -193,7 +193,7 @@ const type = (
               {typeArray.map((ele, index) => {
                 return (
                   <div
-                    className="col-4 pr-0 d-flex"
+                    className="col-4 px-0 d-flex"
                     key={index}
                     style={{ padding: "11px " }}
                   >
@@ -244,7 +244,7 @@ const type = (
 );
 export default function Search() {
   return (
-    <div style={{ position: "relative", paddingLeft: "76px" }}>
+    <div className="form-search">
       <div className="search">
         <div className="row">
           <div className="status col-sm-3 col-12">
@@ -284,7 +284,7 @@ export default function Search() {
             </Dropdown>
           </div>
           <div className="btn-search col-sm-2 col-12">
-            <button className="btn">Search</button>
+            <button>Search</button>
           </div>
         </div>
       </div>

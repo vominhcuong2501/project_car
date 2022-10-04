@@ -1,59 +1,66 @@
-.search {
-  border-radius: 10px;
-  height: 139px;
-  border: 1px solid #e3e3e3;
-  box-shadow: 20px 20px 120px 15px rgba(0, 0, 0, 0.05);
-  background-color: #ffffff !important;
-  position: absolute;
-  width: 90%;
-  bottom: -78px;
-  .row {
-    padding: 40px 0;
-    .ant-space-item:nth-of-type(2) {
-      position: absolute;
-      right: 40px;
-    }
-    .search-title {
-      font-size: 16px;
-      font-weight: bolder;
-      line-height: 19px;
-      margin-bottom: 17.5px;
-    }
-    .ant-space-item:nth-of-type(1),
-    span {
-      color: #5f5f5f;
-      font-size: 14px;
-      line-height: 16px;
-      font-weight: 400;
-      .fa-dollar-sign {
-        width: 14px;
-        height: 14px;
-        line-height: 14px;
-        border-radius: 50%;
-        border: 1px solid #5f5f5f;
-        font-size: 10px;
-        &::before {
-          margin-left: 2.5px;
+.form-search {
+  position: relative;
+  padding-left: 76px;
+  .search {
+    border-radius: 10px;
+    height: 139px;
+    border: 1px solid #e3e3e3;
+    box-shadow: 20px 20px 120px 15px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff !important;
+    position: absolute;
+    width: 90%;
+    bottom: -78px;
+    .row {
+      padding: 40px 0;
+      .ant-space-item:nth-of-type(2) {
+        position: absolute;
+        right: 40px;
+      }
+      .search-title {
+        font-size: 16px;
+        font-weight: bolder;
+        line-height: 19px;
+        margin-bottom: 17.5px;
+      }
+      .ant-space-item:nth-of-type(1),
+      span {
+        color: #5f5f5f;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+        .fa-dollar-sign {
+          width: 14px;
+          height: 14px;
+          line-height: 14px;
+          border-radius: 50%;
+          border: 1px solid #5f5f5f;
+          font-size: 10px;
+          &::before {
+            margin-left: 2.5px;
+          }
         }
       }
-    }
-    .price,
-    .type,
-    .status {
-      border-right: 1px solid #f1f1f1;
-      padding-left: 40px;
-    }
-    .type {
-      padding-left: 40px;
-    }
-    .btn-search {
-      width: 140px;
-      height: 60px;
-      text-align: right;
-      padding-right: 40px;
-      button {
-        background-color: #ee1b24;
-        padding: 20px 44px;
+      .price,
+      .type,
+      .status {
+        border-right: 1px solid #f1f1f1;
+        padding-left: 40px;
+      }
+      .type {
+        padding-left: 40px;
+      }
+      .btn-search {
+        width: 140px;
+        height: 60px;
+        text-align: right;
+        padding-right: 40px;
+        button {
+          border-radius: 5px;
+          border: none;
+          background-color: #ee1b24;
+          padding: 20px 44px;
+          color: #ffffff;
+        }
       }
     }
   }
@@ -75,4 +82,75 @@
 .ant-dropdown-menu {
   margin-top: 34px !important;
   border-radius: 5px !important;
+}
+
+@media (max-width: 575.98px) {
+  .form-search {
+    position: relative;
+    padding: 350px 21px 0 21px;
+    .search {
+      height: 420px;
+      border-radius: 5px;
+      box-shadow: 20px 20px 120px 15px rgba(0, 0, 0, 0.05);
+      background-color: #ffffff !important;
+      .row {
+        padding: 10px;
+        .ant-space-item:nth-of-type(2) {
+          position: absolute;
+          right: 40px;
+        }
+        .search-title {
+          font-size: 16px;
+          font-weight: bolder;
+          line-height: 19px;
+          margin-bottom: 15px;
+        }
+        .ant-space-item:nth-of-type(1),
+        span {
+          color: #5f5f5f;
+          font-size: 14px;
+          line-height: 16px;
+          font-weight: 400;
+          .fa-dollar-sign {
+            width: 14px;
+            height: 14px;
+            line-height: 14px;
+            border-radius: 50%;
+            border: 1px solid #5f5f5f;
+            font-size: 10px;
+            &::before {
+              margin-left: 2.5px;
+            }
+          }
+        }
+        .price,
+        .type,
+        .status {
+          border: 1px solid #f1f1f1;
+          padding: 20px 40px;
+        }
+
+        .btn-search {
+          text-align: center;
+          margin: 0 0 0 10px;
+          button {
+            margin-top: 20px;
+            border-radius: 5px;
+            width: 100%;
+            border: none;
+            background-color: #ee1b24;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 374.98px) {
+  .form-search {
+    display: none;
+  }
 }

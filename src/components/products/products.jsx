@@ -11,12 +11,11 @@ export default function Products() {
         <p>This is how our products works </p>
       </div>
       <div className="row">
-        <div className="card col-4">
+        <div className="card col-sm-4 col-12">
           <img
-            className="card-img-top"
+            className="card-img-top icon-local"
             src={require(`../../Assets/images/icons/icon.png`)}
             alt="icon"
-            style={{width: "73px", height: "105px"}}
           />
           <div className="card-body">
             <h4 className="card-title">Find Car</h4>
@@ -26,13 +25,11 @@ export default function Products() {
             </p>
           </div>
         </div>
-        <div className="card col-4">
+        <div className="card col-sm-4 col-12">
           <img
-            className="card-img-top"
+            className="card-img-top icon-smart"
             src={require(`../../Assets/images/icons/Smart.png`)}
             alt="smart"
-            style={{width: "184px", height: "140px"}}
-            
           />
           <div className="card-body">
             <h4 className="card-title">Make payments</h4>
@@ -42,13 +39,11 @@ export default function Products() {
             </p>
           </div>
         </div>
-        <div className="card col-4">
+        <div className="card col-sm-4 col-12">
           <img
-            className="card-img-top"
+            className="card-img-top icon-secure"
             src={require(`../../Assets/images/icons/Secure.png`)}
             alt="secure"
-            style={{width: "141px", height: "132px"}}
-
           />
           <div className="card-body">
             <h4 className="card-title">Make it Official</h4>

@@ -35,3 +35,8 @@
     color: #232323;
   }
 }
+@media (max-width: 575.99px) {
+  .web {
+    display: none !important;
+  }
+}

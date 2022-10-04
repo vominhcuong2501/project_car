@@ -1,0 +1,250 @@
+.footer {
+  padding: 52px 113px 40px;
+  margin-bottom: 40px;
+  color: #232323;
+  height: 354px;
+  .row {
+    .image {
+      margin-bottom: 16px;
+      .carbuyer {
+        width: 300px;
+        height: 62px;
+      }
+    }
+    .email {
+      .title {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 12px;
+      }
+    }
+    h6 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    ul {
+      padding: 0;
+      li {
+        list-style: none !important;
+        margin-bottom: 10px;
+        a {
+          text-decoration: none;
+          color: #5f5f5f;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+        }
+        .contact-item {
+          color: #232323;
+        }
+        .fa-location-dot,
+        .fa-phone,
+        .fa-envelope {
+          width: 13px;
+          height: 11px;
+          margin-right: 9px;
+          color: #232323;
+          line-height: 20px;
+        }
+      }
+    }
+    .icon {
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+      }
+      li {
+        margin-bottom: 0;
+        margin: 0 8px;
+        a {
+          color: #232323;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  .footer-top {
+    color: #232323;
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    p {
+      color: #8c8c8c;
+      margin: 0;
+    }
+  }
+  .footer-bottom {
+    margin-top: 10px;
+    img {
+      width: 53px;
+      height: 11px;
+    }
+    span {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      color: #5f5f5f;
+      margin-left: 7px;
+    }
+  }
+  .responsive-copyright,
+  .responsive-dropdown {
+    display: none;
+  }
+}
+div.mobile {
+  display: none;
+}
+
+@media (max-width: 575.98px) {
+  .footer {
+    padding: 0px 20px;
+    color: #232323;
+    height: 354px;
+    .row {
+      .image {
+        margin-bottom: 16px;
+        .carbuyer {
+          width: 158px;
+          height: 48px;
+        }
+      }
+      .about,
+      .services,
+      .resources {
+        display: none;
+      }
+      .email {
+        .title {
+          font-size: 12px;
+          line-height: 20px;
+          margin-bottom: 8px;
+        }
+        input {
+          padding: 9px 0 7px 14px;
+          height: 42px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+          border: 1px solid #f1f1f1;
+          border-radius: 5px 0px 0px 5px;
+        }
+        .input-group-append {
+          span {
+            background-color: #ee1b24;
+            color: #ffffff;
+            padding: 8px 16px;
+            font-size: 12px;
+            line-height: 24px;
+          }
+        }
+      }
+      ul {
+        padding: 0;
+        li {
+          list-style: none !important;
+          margin-bottom: 10px;
+          a {
+            text-decoration: none;
+            color: #5f5f5f;
+            font-size: 12px;
+            line-height: 20px;
+          }
+          .contact-item {
+            color: #232323;
+          }
+          .fa-location-dot,
+          .fa-phone,
+          .fa-envelope {
+            width: 13px;
+            height: 11px;
+            margin-right: 9px;
+            color: #232323;
+            line-height: 20px;
+          }
+        }
+      }
+      .icon {
+        p {
+          font-size: 12px;
+          line-height: 20px;
+        }
+        li {
+          margin-bottom: 0;
+          margin: 0 8px;
+          a {
+            color: #232323;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+    .footer-bottom,
+    .footer-top {
+      display: none;
+    }
+    .responsive-copyright,
+    .responsive-dropdown {
+      display: block;
+    }
+    .responsive-copyright {
+      margin-top: 24px;
+      img {
+        width: 53px;
+        height: 20px;
+      }
+      span {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 20px;
+        text-align: center;
+        color: #5f5f5f;
+      }
+      .copyright {
+        margin-top: 24px;
+        background-color: #232323;
+        text-align: center;
+        height: 48px;
+        color: #ffffff;
+        padding: 14px 0;
+      }
+    }
+    .responsive-dropdown {
+      margin: 24px 0;
+      .dropdown-item {
+        height: 56px;
+        padding: 16px 0;
+        border-top: 1px solid #F1F2F5; 
+        border-bottom: 1px solid #F1F2F5; 
+
+        a {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 24px;
+          
+        }
+        .ant-space-item:nth-of-type(2){
+          position: absolute;
+          right: 0px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 374.98px) {
+  .footer {
+    display: none;
+  }
+}

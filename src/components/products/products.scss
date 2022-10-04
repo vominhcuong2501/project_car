@@ -29,6 +29,18 @@
         margin: 0 auto;
         margin-bottom: 51px;
       }
+      .icon-local {
+        width: 73px;
+        height: 105px;
+      }
+      .icon-smart {
+        width: 184px;
+        height: 140px;
+      }
+      .icon-secure {
+        width: 141px;
+        height: 132px;
+      }
       .card-body {
         .card-title {
           font-size: 36px;
@@ -37,11 +49,76 @@
           color: #ffffff;
         }
         .card-text {
-            font-size: 24px;
+          font-size: 24px;
           line-height: 36px;
           font-weight: 400;
         }
       }
     }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .product {
+    background-color: #232323;
+    padding: 22px 35px;
+    .product-title {
+      text-align: center;
+      h3 {
+        font-size: 32px;
+        line-height: 48px;
+        color: #ee1b24;
+        margin: 0;
+      }
+      p {
+        font-size: 20px;
+        line-height: 30px;
+        color: #ffffff;
+        margin-bottom: 42px;
+      }
+    }
+    .row {
+      margin-top: 0;
+      .card {
+        margin: 0 0 46px;
+        background-color: #232323;
+        text-align: center;
+        border: none;
+        color: #ffffff;
+        img {
+          margin: 0 auto;
+          margin-bottom: 51px;
+        }
+        .icon-local {
+          width: 73px;
+          height: 105px;
+        }
+        .icon-smart {
+          width: 184px;
+          height: 140px;
+        }
+        .icon-secure {
+          width: 141px;
+          height: 132px;
+        }
+        .card-body {
+          padding: 0;
+          .card-title {
+            font-size: 24px;
+            line-height: 36px;
+            color: #ffffff;
+          }
+          .card-text {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 374.98px) {
+  .product {
+    display: none;
   }
 }

@@ -32,3 +32,44 @@
     }
   }
 }
+@media (max-width: 575.98px) {
+  .carousel {
+    margin: 32px 20px 0 20px;
+    height: 200px;
+    background-image: url("../../Assets/images/banner/banner.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    border-radius: 10px;
+    .card {
+      width: 50%;
+      background-color: transparent;
+      padding: 20px 0 0 15px;
+      .card-title {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 700;
+        color: #FFFFFF;
+        margin-top: 25px;
+      }
+      .card-text {
+        color: #E3E3E3;
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 14px;
+        margin-bottom: 5px;
+      }
+      button {
+        width: 90px;
+        height: 25px;
+        background: #EE1B24;
+        border-radius: 4px;
+        color: #FFFFFF;
+        font-size: 8px;
+        font-weight: 400;
+        padding: 0;
+      }
+    }
+  }
+}

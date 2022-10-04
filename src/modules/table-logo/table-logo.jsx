@@ -200,7 +200,10 @@ export default function TableLogo() {
         <div className="navbar-mobile d-flex justify-content-between align-items-center">
           <i className="fa-solid fa-chevron-left"></i>
           <div>
-            <i className="fa-solid fa-plus" onClick={() => navigate("/admin/modal-add")}></i>
+            <i
+              className="fa-solid fa-plus"
+              onClick={() => navigate("/admin/modal-add")}
+            ></i>
             <a href="#">
               <img
                 src={require("../../Assets/images/icons/Vector.png")}
@@ -221,30 +224,32 @@ export default function TableLogo() {
             name="keyword"
           />
         </div>
-        {data.map((ele, index) => {
-          return (
-            <div
-              key={ele.id}
-              className="d-flex logo-item justify-content-center align-items-center"
-            >
-              <div className="col-2 image-logo p-0">
-                <img
-                  src={require(`./../../Assets/images/logo/${ele.image}`)}
-                  alt={ele.image}
-                  width={48}
-                  height={48}
-                />
+        <div style={{marginTop: "72px"}}>
+          {data.map((ele, index) => {
+            return (
+              <div
+                key={ele.id}
+                className="d-flex logo-item justify-content-center align-items-center"
+              >
+                <div className="col-2 image-logo p-0">
+                  <img
+                    src={require(`./../../Assets/images/logo/${ele.image}`)}
+                    alt={ele.image}
+                    width={48}
+                    height={48}
+                  />
+                </div>
+                <div className="col-8 name-logo">
+                  <a href="#">{ele.name}</a>
+                  <p>{ele.type}</p>
+                </div>
+                <div className="col-2 p-0 checkbox text-right">
+                  <input type="radio" name="1" />
+                </div>
               </div>
-              <div className="col-8 name-logo">
-                <a href="#">{ele.name}</a>
-                <p>{ele.type}</p>
-              </div>
-              <div className="col-2 p-0 checkbox text-right">
-                <input type="radio" name="1" />
-              </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );

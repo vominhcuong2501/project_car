@@ -7,7 +7,7 @@ export default function Carousel() {
       <div className="card">
         <div className="card-body p-0">
           <h4 className="card-title">Car Marketplace</h4>
-          <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Nunc odio in et, lectus sit lorem id integer.</p>
+          <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.</p>
           <button className="btn">Get Started</button>
         </div>
       </div>
