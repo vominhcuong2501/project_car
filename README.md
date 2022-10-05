@@ -3,4 +3,4 @@ Build layout Web and Mobile: Car Brand
  - Libraries used for the project: Bootstrap 4, Ant-design, SASS...
  - Control: Git and Github.
 
-https://topdev.vn/users/view-cv/a4ecf0c0-448a-11ed-ae22-65c5bd389bc8
+My resume: https://topdev.vn/users/view-cv/a4ecf0c0-448a-11ed-ae22-65c5bd389bc8
