@@ -199,9 +199,28 @@ export default function Footer() {
                 placeholder="Enter your email"
                 aria-label="Enter your email"
                 aria-describedby="basic-addon2"
+                style={{
+                  padding: "9px 0 7px 14px",
+                  height: "42px",
+                  fontWeight: 400,
+                  fontSize: "14px",
+                  lineHeight: "22px",
+                  border: "1px solid #f1f1f1",
+                  borderRadius: "5px 0px 0px 5px",
+                }}
               />
               <div className="input-group-append">
-                <span className="input-group-text" id="basic-addon2">
+                <span
+                  className="input-group-text"
+                  id="basic-addon2"
+                  style={{
+                    backgroundColor: "#ee1b24",
+                    color: "#ffffff",
+                    padding: " 8px 16px",
+                    fontSize: "12px",
+                    lineHeight: "24px",
+                  }}
+                >
                   Subscribe
                 </span>
               </div>
