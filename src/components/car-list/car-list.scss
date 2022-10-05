@@ -74,14 +74,14 @@
     }
   }
 }
-.mobile {
+.mobile-carList {
   display: none;
 }
 @media (max-width: 575.98px) {
-  .web {
+  .web-carList {
     display: none;
   }
-  .mobile {
+  .mobile-carList {
     display: block;
     padding: 100px 0 0;
     .card-item {
@@ -158,8 +158,8 @@
     }
   }
 }
-@media (max-width: 374.98px) {
-  .carList .mobile {
+@media (max-width: 375px) {
+  .carList .mobile-carList {
     display: none !important;
   }
 }

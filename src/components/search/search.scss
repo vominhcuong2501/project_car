@@ -46,9 +46,6 @@
         border-right: 1px solid #f1f1f1;
         padding-left: 40px;
       }
-      .type {
-        padding-left: 40px;
-      }
       .btn-search {
         width: 140px;
         height: 60px;
@@ -149,7 +146,7 @@
     }
   }
 }
-@media (max-width: 374.98px) {
+@media (max-width: 375px) {
   .form-search {
     display: none;
   }

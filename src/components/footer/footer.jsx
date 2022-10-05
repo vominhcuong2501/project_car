@@ -61,7 +61,7 @@ export default function Footer() {
     <>
       <div className="footer">
         <div className="row">
-          <div className="col-sm-4 col-12">
+          <div className="col-sm-4 col-12 footer-contact">
             <div className="image">
               <img
                 className="carbuyer"
@@ -70,21 +70,36 @@ export default function Footer() {
               />
             </div>
             <ul>
+              <li></li>
               <li>
-                <a className="contact-item" href="#">
-                  <i className="fa-solid fa-location-dot"></i> 71 Ayer Rajah
-                  Crescent, #06-14, Singapore 139951
-                </a>
+                <div className="contact-item">
+                  <i className="fa-solid fa-location-dot"></i>
+                  <div>
+                    <a href="tel:+65 8808 7905">
+                      71 Ayer Rajah Crescent, #06-14, Singapore 139951
+                    </a>
+                  </div>
+                </div>
               </li>
               <li>
-                <a className="contact-item" href="tel:+65 8808 7905">
-                  <i className="fa-solid fa-phone"></i> +65 8808 7905
-                </a>
+                <div className="contact-item">
+                  <i className="fa-solid fa-phone"></i>
+                  <div>
+                    <a className="contact-item" href="#">
+                      +65 8808 7905
+                    </a>
+                  </div>
+                </div>
               </li>
               <li>
-                <a className="contact-item" href="mailto:hello@carbuyer.com.sg">
-                  <i className="fa-solid fa-envelope"></i> hello@carbuyer.com.sg
-                </a>
+                <div className="contact-item">
+                  <i className="fa-solid fa-envelope"></i>
+                  <div>
+                    <a href="mailto:hello@carbuyer.com.sg">
+                      hello@carbuyer.com.sg
+                    </a>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -251,8 +266,8 @@ export default function Footer() {
             </div>
             <div className="col-10 text-center">
               <span>
-                CarBuyer Pte Ltd and the CarBuyer Singapore brand are wholly
-                owned by UCARS Pte Ltd
+                CarBuyer Pte Ltd and the CarBuyer Singapore brand <br /> are
+                wholly owned by UCARS Pte Ltd
               </span>
             </div>
           </div>
@@ -261,7 +276,28 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="mobile"></div>
+      <nav className="footer-mobile">
+        <ul>
+          <li className="nav-item active">
+            <a className="nav-link" href="#">
+              <i className="fa-solid fa-house"></i>
+              <p>Home</p>
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">
+              <i className="fa-solid fa-newspaper"></i>
+              <p>News</p>
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">
+              <i className="fa-solid fa-user"></i>
+              <p>Profile</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </>
   );
 }

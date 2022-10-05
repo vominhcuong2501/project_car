@@ -3,7 +3,7 @@ import "./contact.scss"
 
 export default function Contact() {
   return (
-    <div className="contact web">
+    <div className="contact">
       <div className="contact-left ">
         <div className="adress">
           <i className="fa-solid fa-location-dot"></i>

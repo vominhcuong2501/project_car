@@ -19,6 +19,11 @@
         margin-bottom: 12px;
       }
     }
+    .footer-contact {
+      .contact-item {
+        display: flex;
+      }
+    }
     h6 {
       font-weight: 600;
       font-size: 16px;
@@ -46,7 +51,7 @@
           height: 11px;
           margin-right: 9px;
           color: #232323;
-          line-height: 20px;
+          line-height: 22px;
         }
       }
     }
@@ -101,10 +106,9 @@
     display: none;
   }
 }
-div.mobile {
+.footer-mobile {
   display: none;
 }
-
 @media (max-width: 575.98px) {
   .footer {
     padding: 0px 20px;
@@ -145,6 +149,14 @@ div.mobile {
             padding: 8px 16px;
             font-size: 12px;
             line-height: 24px;
+          }
+        }
+      }
+      .footer-contact {
+        .contact-item {
+          display: flex;
+          div {
+            margin: 0 auto;
           }
         }
       }
@@ -225,16 +237,15 @@ div.mobile {
       .dropdown-item {
         height: 56px;
         padding: 16px 0;
-        border-top: 1px solid #F1F2F5; 
-        border-bottom: 1px solid #F1F2F5; 
+        border-top: 1px solid #f1f2f5;
+        border-bottom: 1px solid #f1f2f5;
 
         a {
           font-weight: 600;
           font-size: 14px;
           line-height: 24px;
-          
         }
-        .ant-space-item:nth-of-type(2){
+        .ant-space-item:nth-of-type(2) {
           position: absolute;
           right: 0px;
         }
@@ -243,8 +254,45 @@ div.mobile {
   }
 }
 
-@media (max-width: 374.98px) {
+@media (max-width: 375px) {
   .footer {
     display: none;
+  }
+  .footer-mobile {
+    background-color: #ffffff;
+    display: block;
+    height: 70px;
+    padding: 10px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 9999;
+    ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      padding: 0;
+      justify-content: space-between;
+      .nav-item {
+        a {
+          color: #B4B4B4;
+          i {
+            width: 20px;
+            height: 20px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            margin: 0;
+          }
+        }
+      }
+      .active>a {
+        color: #232323 !important;
+      }
+    }
   }
 }

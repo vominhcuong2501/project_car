@@ -1,10 +1,11 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./header-home.scss";
 
 export default function HeaderHome() {
   return (
     <div className="header">
-      <div className="header-home web">
+      <div className="header-home ">
         <div className="logo">
           <img
             src={require("../../Assets/images/logo/UCARS Logo.png")}
@@ -33,6 +34,11 @@ export default function HeaderHome() {
                 News
               </a>
             </li>
+            <li className="nav-item">
+              <NavLink to="/admin" className="nav-link">
+                Car Brand
+              </NavLink>
+            </li>
           </ul>
         </div>
         <div className="btn-login">
@@ -41,7 +47,7 @@ export default function HeaderHome() {
           </button>
         </div>
       </div>
-      <div className="mobile  m-0">
+      <div className="mobile-header  m-0">
         <div className="logo">
           <img
             src={require("../../Assets/images/logo/Carbuyer Logo 2.png")}

@@ -196,7 +196,7 @@ export default function TableLogo() {
       </div>
 
       {/* Navbar Mobile */}
-      <div className="mobile">
+      <div className="mobile-table">
         <div className="navbar-mobile d-flex justify-content-between align-items-center">
           <i className="fa-solid fa-chevron-left"></i>
           <div>
@@ -224,7 +224,7 @@ export default function TableLogo() {
             name="keyword"
           />
         </div>
-        <div style={{marginTop: "72px"}}>
+        <div >
           {data.map((ele, index) => {
             return (
               <div

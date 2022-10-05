@@ -112,7 +112,7 @@ main {
   }
 }
 
-.mobile {
+.mobile-table {
   display: none;
   .navbar-mobile {
     margin: 12px 16px 0 16px;
@@ -140,8 +140,7 @@ main {
   .search {
     width: 308px;
     height: 40px;
-    position: absolute;
-    top: 120px;
+margin-top: 20px;
     .input-search {
       padding: 10px 17px;
       background-color: #F1F1F1 !important;
@@ -177,11 +176,11 @@ main {
 }
 
 // Reponsive
-@media (max-width: 375px) {
+@media (max-width: 575px) {
   .web {
     display: none !important;
   }
-  .mobile {
+  .mobile-table {
     display: block !important;
   }
 }

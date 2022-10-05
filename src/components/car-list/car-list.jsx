@@ -7,7 +7,7 @@ export default function CarList() {
   const { carList } = useSelector((state) => state.carReducer);
   return (
     <div className="carList">
-      <div className="car-list web">
+      <div className="car-list web-carList">
         <div className="row">
           <div className="card-item col-3">
             <img
@@ -50,7 +50,7 @@ export default function CarList() {
           <button>View more new cars</button>
         </div>
       </div>
-      <div className="mobile">
+      <div className="mobile-carList">
         <Carousel autoplay slidesToShow={1} slidesToScroll={1} dots={false}>
           <div className="card-item">
             <img

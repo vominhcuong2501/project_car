@@ -1,0 +1,53 @@
+.car-list-mobile {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .car-list-mobile {
+    padding: 0 20px 100px;
+    display: block;
+    .used-car, .new-car, .latest-new {
+      h6 {
+        margin-top: 8px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+      }
+      p {
+        margin: 4px 0 6px 0;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+      }
+      span {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: #5f5f5f;
+      }
+    }
+    .car-list-mobile-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+      margin-top: 25px;
+
+        h4 {
+          margin: 0;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    .car-list-mobile-item {
+        width: 224px !important;
+
+      img {
+        width: 224px;
+        height: 96px;
+        border-radius: 5px;
+      }
+    }
+  }
+}

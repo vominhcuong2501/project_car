@@ -41,16 +41,16 @@
     }
   }
 
-  .mobile {
+  .mobile-header {
     display: none !important;
   }
 }
 
 @media (max-width: 575.98px) {
-  .web {
+  .header .header-home {
     display: none;
   }
-  .header .mobile {
+  .header .mobile-header {
     display: block !important;
     background-color: #ffffff;
     padding: 12px 35px;

@@ -130,7 +130,38 @@ const DEFAULT_STATE = {
       from: "POA"
     },
   ],
-  
+  carType: [
+    {image: "couple.png", name: "Couple" },
+    {image: "sedan.png", name: "Sedan" },
+    {image: "SUV.png", name: "SUV" },
+    {image: "MPV.png", name: "MPV" },
+    {image: "hatchback.png", name: "Hatchback" },
+    {image: "sport.png", name: "Sport" },
+    {image: "commercial.png", name: "Commercial" },
+    {image: "classic.png", name: "Classic" },
+  ],
+  usedCar: [
+    {image: "MAZDA3.png", name: "Mazda 3 Sedan 1.5 SP (A)", price: "$83,800"},
+    {image: "BMW5.png", name: "Bmw 5 Series 520i (A)", price: "$96,800"},
+    {image: "HONDA.png", name: "Honda CR-V 1.5 Turbo 7-Seater (A)", price: "$139,000"},
+    {image: "SUBARU.png", name: "Subaru Forester 2.0 XT (A)", price: "$65,800"},
+    {image: "HONDA1.png", name: "Honda Shuttle 1.5 [2017] (A)", price: "$67,800"},
+  ],
+  newCar: [
+    {image: "TESLA.png", name: "Tesla Model Y SUV", price: "$142,271"},
+    {image: "LAMBO.png", name: "Lamborghini Huracan", price: "$250,800"},
+    {image: "LAND.png", name: "Land Rover Range Rover Mild Hybrid", price: "$578,999"},
+    {image: "BMW.png", name: "BMW 2 Series Coupé", price: "$264,888"},
+    {image: "MEC.png", name: "Mercedes Benz E-Class E229d...", price: "250,800"},
+  ],
+  news: [
+    {image: "VOLK.png", title: "Volkswagen previews all-new electric sedan with plans for a 2023 launch", name: "Lionel Kong" },
+    {image: "HUYNDAI.png", title: "Hyundai announces Ioniq 6 'streamliner' sedan to rival Model 3", name: "Derryn Wong" },
+    {image: "CHEAP.png", title: "Top 5 Cheapest Cars In Singapore Under $10,000", name: "UCARS Team" },
+    {image: "BEST.png", title: "We Rate The Best Car Cameras For Drivers",name: "UCARS Team" },
+    {image: "BUDGET.png", title: "Singapore Budget 2021: What Do Drivers Need to Know", name: "UCARS Team" },
+
+  ]
 };
 
 export const carReducer = (state = DEFAULT_STATE, { type, payload }) => {
