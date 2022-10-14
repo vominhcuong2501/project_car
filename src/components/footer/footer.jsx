@@ -61,7 +61,7 @@ export default function Footer() {
     <>
       <div className="footer">
         <div className="row">
-          <div className="col-sm-4 col-12 footer-contact">
+          <div className="col-xl-4 col-12 footer-contact">
             <div className="image">
               <img
                 className="carbuyer"
@@ -103,7 +103,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-sm-1 col-12 about">
+          <div className="col-xl-1 col-md-4 col-12 about">
             <h6>About</h6>
             <ul>
               <li>
@@ -117,7 +117,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-sm-2 col-12 services">
+          <div className="col-xl-2 col-md-4 col-12 services">
             <h6>Services</h6>
             <ul>
               <li>
@@ -131,7 +131,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-sm-1 col-12 resources">
+          <div className="col-xl-1 col-md-4 col-12 resources">
             <h6>Resources</h6>
             <ul>
               <li>
@@ -187,7 +187,7 @@ export default function Footer() {
               </Dropdown>
             </div>
           </div>
-          <div className="col-sm-4 col-12 email">
+          <div className="col-xl-4 col-12 email">
             <p className="title">
               Get the <span style={{ color: "#EE1B24" }}>latest</span>{" "}
               automotive news sent to your inbox!

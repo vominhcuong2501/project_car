@@ -4,19 +4,19 @@
   background-size: 100%;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center;
   .card {
     width: 50%;
     background-color: transparent;
     padding: 97px 0 0 108px;
+    border: none;
     .card-title {
       font-size: 60px;
       line-height: 76px;
       font-weight: 700;
-      color: #FFFFFF;
+      color: #ffffff;
     }
     .card-text {
-      color: #E3E3E3;
+      color: #e3e3e3;
       font-size: 16px;
       font-weight: 400;
       line-height: 21px;
@@ -25,13 +25,61 @@
     button {
       width: 196px;
       height: 52px;
-      background: #EE1B24;
+      background: #ee1b24;
       border-radius: 8px;
-      color: #FFFFFF;
+      color: #ffffff;
       padding: 11px 48px;
     }
   }
 }
+@media (max-width: 1199.98px) {
+  .carousel {
+    .card {
+      padding: 80px 0 0 80px;
+      .card-title {
+        font-size: 50px;
+        line-height: 60px;
+      }
+      .card-text {
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+  }
+}
+@media (max-width: 991.98px) {
+  .carousel {
+    .card {
+      padding: 50px 0 0 80px;
+      .card-title {
+        font-size: 35px;
+        line-height: 45px;
+      }
+      .card-text {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .carousel {
+    .card {
+      padding: 50px 0 0 80px;
+      .card-title {
+        font-size: 25px;
+        line-height: 30px;
+      }
+      .card-text {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
 @media (max-width: 575.98px) {
   .carousel {
     margin: 32px 20px 0 20px;
@@ -51,11 +99,11 @@
         font-size: 14px;
         line-height: 18px;
         font-weight: 700;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-top: 25px;
       }
       .card-text {
-        color: #E3E3E3;
+        color: #e3e3e3;
         font-size: 8px;
         font-weight: 400;
         line-height: 14px;
@@ -64,9 +112,9 @@
       button {
         width: 90px;
         height: 25px;
-        background: #EE1B24;
+        background: #ee1b24;
         border-radius: 4px;
-        color: #FFFFFF;
+        color: #ffffff;
         font-size: 8px;
         font-weight: 400;
         padding: 0;

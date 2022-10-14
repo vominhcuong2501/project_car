@@ -40,11 +40,43 @@ export default function HeaderHome() {
               </NavLink>
             </li>
           </ul>
+          <div className="btn-login">
+            <button type="button" className="btn">
+              Login
+            </button>
+          </div>
         </div>
-        <div className="btn-login">
-          <button type="button" className="btn">
-            Login
+        <div className="dropdown btn-toggle">
+          <button
+            className="btn"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i className="fa-solid fa-bars text-light"></i>
           </button>
+          <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a className="dropdown-item" href="#">
+              New Cars
+            </a>
+            <a className="dropdown-item" href="#">
+              Used Cars
+            </a>
+            <a className="dropdown-item" href="#">
+              Reviews
+            </a>
+            <a className="dropdown-item" href="#">
+              News
+            </a>
+            <NavLink to="/admin" className="dropdown-item">
+              Car Brand
+            </NavLink>
+            <a className="dropdown-item" href="#">
+              Login
+            </a>
+          </div>
         </div>
       </div>
       <div className="mobile-header  m-0">

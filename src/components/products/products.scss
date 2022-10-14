@@ -58,6 +58,54 @@
   }
 }
 
+@media (max-width: 991.98px) {
+  .product {
+    .product-title {
+      h3 {
+        font-size: 40px;
+        line-height: 56px;
+      }
+      p {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+    .row {
+      margin-top: 80px;
+      .card {
+        padding: 0 50px;
+        margin-bottom: 20px;
+        img {
+          margin: 0 auto;
+          margin-bottom: 20px;
+        }
+        .icon-local {
+          width: 58p !important;
+          height: 90px !important;
+        }
+        .icon-smart {
+          width: 169px !important;
+          height: 125px !important;
+        }
+        .icon-secure {
+          width: 126px !important;
+          height: 117px !important;
+        }
+        .card-body {
+          .card-title {
+            font-size: 30px;
+            line-height: 50px;
+          }
+          .card-text {
+            font-size: 20px;
+            line-height: 32px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 575.98px) {
   .product {
     background-color: #232323;

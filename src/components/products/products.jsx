@@ -11,7 +11,7 @@ export default function Products() {
         <p>This is how our products works </p>
       </div>
       <div className="row">
-        <div className="card col-sm-4 col-12">
+        <div className="card col-lg-4 col-12">
           <img
             className="card-img-top icon-local"
             src={require(`../../Assets/images/icons/icon.png`)}
@@ -25,7 +25,7 @@ export default function Products() {
             </p>
           </div>
         </div>
-        <div className="card col-sm-4 col-12">
+        <div className="card col-lg-4 col-12">
           <img
             className="card-img-top icon-smart"
             src={require(`../../Assets/images/icons/Smart.png`)}
@@ -39,7 +39,7 @@ export default function Products() {
             </p>
           </div>
         </div>
-        <div className="card col-sm-4 col-12">
+        <div className="card col-lg-4 col-12">
           <img
             className="card-img-top icon-secure"
             src={require(`../../Assets/images/icons/Secure.png`)}

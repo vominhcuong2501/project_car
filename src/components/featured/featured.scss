@@ -1,5 +1,5 @@
 .featured {
-  padding: 80px 60px 129px 64px;
+  padding: 80px 60px 50px 64px;
   .featured-title {
     padding-bottom: 60px;
     .featured-text {
@@ -37,16 +37,15 @@
   .featured-list {
     .card {
       border: none;
-      width: 415px;
-      height: 361px;
       border-radius: 0px 39.7214px;
-      padding: 8px 46px 15px 39px;
+      padding: 8px 20px 15px;
+      width: 300px !important;
       .card-img-top {
-        width: 350px;
+        width: 300px;
         height: 203px;
       }
       .card-content {
-        width: 350px;
+        width: 300px;
         .card-title {
           padding: 56px 0 2.4px 0;
           display: flex;
@@ -89,9 +88,9 @@
       }
     }
     .poster {
-      width: 415px;
+      width: 300px;
       height: 361px;
-      padding: 8px 46px 15px 80px;
+      padding: 8px 20px 15px;
       img {
         width: 281px;
         margin: 0;
@@ -103,23 +102,59 @@
   }
 }
 
+@media (max-width: 991.98px) {
+  .featured {
+    .featured-title {
+      padding-bottom: 40px;
+      .featured-text {
+        h3 {
+          font-size: 35px;
+          line-height: 50px;
+        }
+        p {
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+    }
+    .featured-list {
+      .card {
+        .card-content {
+          .card-title {
+            p {
+              font-size: 25px;
+              line-height: 32px;
+            }
+            span {
+              font-size: 16px;
+              line-height: 22px;
+            }
+          }
+          .card-text {
+            p,
+            span {
+              font-size: 16px;
+              line-height: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 575.98px) {
   .featured {
     padding: 60px 20px 0;
     .featured-title {
-      text-align: center;
       padding-bottom: 7px;
       .featured-text {
         h3 {
           font-size: 32px;
           line-height: 48px;
-          color: #ee1b24;
         }
         p {
           font-size: 20px;
           line-height: 30px;
-          color: #232323;
-          margin: 0;
         }
       }
       .featured-btn {
@@ -128,8 +163,7 @@
     }
     .featured-list {
       .card {
-        border: none;
-        width: 415px;
+        width: 300px;
         height: 300px;
         border-radius: 0px 39.7214px;
         padding: 8px 30px;
@@ -141,41 +175,21 @@
           width: 300px;
           .card-title {
             padding: 56px 0 2.4px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            color: #232323;
-            margin-bottom: 0;
             p {
-              margin: 0;
-              font-weight: 700;
-              font-size: 31.7771px;
-              line-height: 48px;
+              font-size: 25px;
+              line-height: 32px;
             }
             span {
-              font-weight: 400;
-              font-size: 19.0663px;
-              line-height: 29px;
+              font-size: 16px;
+              line-height: 22px;
             }
           }
           .card-text {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: #232323;
-            margin-bottom: 0;
             p,
             span {
-              margin: 0;
-              font-weight: 400;
-              font-size: 19.0663px;
-              line-height: 29px;
+              font-size: 16px;
+              line-height: 22px;
               opacity: 0.8;
-            }
-            span {
-              font-weight: 700;
-              opacity: 1;
-              color: #ee1b24;
             }
           }
         }

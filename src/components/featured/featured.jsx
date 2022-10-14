@@ -21,10 +21,17 @@ export default function Featured() {
         <Carousel
           className="row"
           autoplay
-          slidesToShow={3}
+          slidesToShow={4}
           slidesToScroll={1}
           dots={false}
           responsive={[
+            {
+              breakpoint: 1400,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+              },
+            },
             {
               breakpoint: 1200,
               settings: {
@@ -40,15 +47,15 @@ export default function Featured() {
               },
             },
             {
-              breakpoint: 576,
+              breakpoint: 768,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
               },
             },
           ]}
-        > 
-          <div className="card col-md-3 col-12">
+        >
+          <div className="card col-lg-3 col-md-6 col-12">
             <img
               className="card-img-top"
               src={require("../../Assets/images/feature/thepalace.png")}
@@ -65,7 +72,7 @@ export default function Featured() {
               </div>
             </div>
           </div>
-          <div className="card col-md-3 col-12">
+          <div className="card col-lg-3 col-md-6 col-12">
             <img
               className="card-img-top"
               src={require("../../Assets/images/feature/ivyrony.png")}
@@ -82,13 +89,13 @@ export default function Featured() {
               </div>
             </div>
           </div>
-          <div className="poster col-md-3 col-12">
+          <div className="poster col-lg-3 col-md-6 col-12">
             <img
               src={require("../../Assets/images/banner/poster.png")}
               alt="3"
             />
           </div>
-          <div className="card col-md-3 col-12">
+          <div className="card col-lg-3 col-md-6 col-12">
             <img
               className="card-img-top"
               src={require("../../Assets/images/feature/rexona.png")}
@@ -105,7 +112,7 @@ export default function Featured() {
               </div>
             </div>
           </div>
-          <div className="card col-md-3 col-12">
+          <div className="card col-lg-3 col-md-6 col-12">
             <img
               className="card-img-top"
               src={require("../../Assets/images/feature/thepalace.png")}
@@ -122,7 +129,7 @@ export default function Featured() {
               </div>
             </div>
           </div>
-          <div className="card col-md-3 col-12">
+          <div className="card col-lg-3 col-md-6 col-12">
             <img
               className="card-img-top"
               src={require("../../Assets/images/feature/ivyrony.png")}
@@ -142,8 +149,8 @@ export default function Featured() {
         </Carousel>
       </div>
       <div className="featured-responsive col-md-6 col-12">
-          <button className="btn-view">View more</button>
-        </div>
+        <button className="btn-view">View more</button>
+      </div>
     </div>
   );
 }

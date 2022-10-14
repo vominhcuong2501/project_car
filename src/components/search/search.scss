@@ -3,7 +3,6 @@
   padding-left: 76px;
   .search {
     border-radius: 10px;
-    height: 139px;
     border: 1px solid #e3e3e3;
     box-shadow: 20px 20px 120px 15px rgba(0, 0, 0, 0.05);
     background-color: #ffffff !important;
@@ -49,7 +48,6 @@
       .btn-search {
         width: 140px;
         height: 60px;
-        text-align: right;
         padding-right: 40px;
         button {
           border-radius: 5px;
@@ -79,6 +77,45 @@
 .ant-dropdown-menu {
   margin-top: 34px !important;
   border-radius: 5px !important;
+}
+
+@media (max-width: 1199.98px) {
+  .form-search {
+    .search {
+      .price,
+      .type,
+      .status,
+      .btn-search  {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 767.98px) {
+  .form-search {
+    margin-top: 50px;
+    .search {
+      height: 350px;
+      border-radius: 5px;
+      box-shadow: 20px 20px 120px 15px rgba(0, 0, 0, 0.05);
+      background-color: #ffffff !important;
+      .row {
+        padding: 0;
+        .price,
+        .type,
+        .status {
+          border-bottom: 1px solid #f1f1f1;
+        }
+
+        .btn-search {
+          margin: 15px;
+        text-align: center;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -123,23 +160,16 @@
         .price,
         .type,
         .status {
-          border: 1px solid #f1f1f1;
-          padding: 20px 40px;
+          border-bottom: 1px solid #f1f1f1;
+          margin: 20px;
         }
 
         .btn-search {
           text-align: center;
           margin: 0 0 0 10px;
           button {
-            margin-top: 20px;
-            border-radius: 5px;
-            width: 100%;
-            border: none;
-            background-color: #ee1b24;
-            color: #ffffff;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 19px;
+            font-size: 14px;
+            line-height: 16px;
           }
         }
       }

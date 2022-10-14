@@ -247,7 +247,7 @@ export default function Search() {
     <div className="form-search">
       <div className="search">
         <div className="row">
-          <div className="status col-sm-3 col-12">
+          <div className="status col-lg-3 col-md-6 col-12">
             <p className="search-title">New/Used</p>
             <Dropdown overlay={status} trigger={["click"]}>
               <a onClick={(e) => e.preventDefault()}>
@@ -258,7 +258,7 @@ export default function Search() {
               </a>
             </Dropdown>
           </div>
-          <div className="price col-sm-4 col-12">
+          <div className="price col-lg-4 col-md-6 col-12">
             <p className="search-title">Price Range</p>
             <Dropdown overlay={price} trigger={["click"]}>
               <a onClick={(e) => e.preventDefault()}>
@@ -272,7 +272,7 @@ export default function Search() {
               </a>
             </Dropdown>
           </div>
-          <div className="type col-sm-3 col-12">
+          <div className="type col-lg-3 col-md-6 col-12">
             <p className="search-title">Vehicle Type</p>
             <Dropdown overlay={type} trigger={["click"]}>
               <a onClick={(e) => e.preventDefault()}>
@@ -283,7 +283,7 @@ export default function Search() {
               </a>
             </Dropdown>
           </div>
-          <div className="btn-search col-sm-2 col-12">
+          <div className="btn-search col-lg-2 col-md-6 col-12">
             <button>Search</button>
           </div>
         </div>

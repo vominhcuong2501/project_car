@@ -9,16 +9,16 @@ export default function CarList() {
     <div className="carList">
       <div className="car-list web-carList">
         <div className="row">
-          <div className="card-item col-3">
+          <div className="card-item col-xl-3 col-lg-4  col-md-6 col-12">
             <img
               src={require("../../Assets/images/banner/poster.png")}
               alt="Postter"
-              style={{ width: "309.3px", height: "361px" }}
+              style={{ height: "361px" }}
             />
           </div>
           {carList.map((ele, index) => {
             return (
-              <div className="card-item col-3" key={index}>
+              <div className="card-item  col-xl-3 col-lg-4 col-md-6 col-12" key={index}>
                 <img
                   className="card-img-top"
                   src={require(`../../Assets/images/cars/${ele.image}`)}
